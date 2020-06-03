@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no" />
+<title>搜索页_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_cmspath/}/m/style/css/style.css" rel="stylesheet">
+<link href="{dede:global.cfg_cmspath/}/m/style/css/common.css" rel="stylesheet">
+<script src="{dede:global.cfg_cmspath/}/m/style/js/autofontsize.min.js"></script>
+<script src="{dede:global.cfg_cmspath/}/m/style/js/jquery.js"></script>
+<script src="{dede:global.cfg_cmspath/}/m/style/js/clipboard.min.js"></script>
+<script src="{dede:global.cfg_cmspath/}/m/style/js/common.js"></script>
+</head>
+<body>
+<!--顶部开始-->
+<header id="top_main" class="header">
+  <div id="top" class="clearfix"><a class="logo" href="/m/index.php" title="{dede:global.cfg_webname/}"> <img src="{dede:global.cfg_cmspath/}/m/style/images/logo.png" alt="{dede:global.cfg_webname/}"></a>
+    <div class="topsearch" id="topsearch"><span class="btn_search icon"></span></div>
+    <!--搜索栏开始-->
+    <div class="tsearch hidden" id="tsearch">
+      <form role="search" action="{dede:global.cfg_cmsurl/}/plus/searchm.php">
+        <input type="hidden" name="mobile" value="1" />
+        <input type="hidden" name="kwtype" value="0" />
+        <input class="txt" type="text" name="q" value="请输入关键字" onFocus="if(this.value==defaultValue)this.value=''" onBlur="if(this.value=='')this.value=defaultValue">
+        <input class="btn icon" type="submit" value="" name="">
+      </form>
+    </div>
+    <!--搜索栏结束-->
+    <div class="btn_close_main hidden" style="display: none;"><a class="btn_close icon"></a></div>
+    <div id="nav" class="cur">
+      <p class="nav icon"></p>
+    </div>
+  </div>
+</header>
+<!--顶部结束--> 
+<!--右侧导航开始-->
+<nav class="subNav trans" id="subNav">
+  <div class="subNavCon trans">
+    <ul class="clearfix">
+      <li><a href="/m/index.php"  title="网站首页">网站首页</a></li>
+      {dede:channel type='top' currentstyle="<li><a href='/m/list.php?tid=~id~'>~typename~</a></li>"}
+      <li><a href="/m/list.php?tid=[field:id/]" title="[field:typename/]">[field:typename/]</a></li>
+      {/dede:channel}
+    </ul>
+  </div>
+</nav>
+<!--右侧导航结束--> 
+<!--位置开始-->
+<section class="cateList"> <span class="goBack iconbef" id="goBack"></span>
+  <h3>搜索页<s class="iconn"></s></h3>
+</section>
+<!--位置结束--> 
+<!--文章列表开始-->
+<section class="content newsList">
+  <ul class="list-loop list clearfix">
+    {dede:list pagesize ='5'}
+    <li class="loop item"><a href="/m/view.php?aid=[field:id/]" title="[field:title/]"><img src="[field:picname/]" alt="[field:title/]">
+      <h3 class="tit" >[field:title/]</h3>
+      <p class="txt">[field:description function="cn_substr(@me,80)"/]...</p>
+      </a></li>
+    {/dede:list}
+  </ul>
+  <div class="pglist"> {dede:pagelist listitem="index,end,pre,next,pageno" listsize="1"/} </div>
+</section>
+<!--文章列表结束-->
+<div id="returntop" class="icon hidden"></div>
+{dede:include filename="footer_m.htm"/}
+</body>
+</html>

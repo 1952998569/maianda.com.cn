@@ -1,0 +1,27 @@
+<!--欢迎进入-->
+<div class="hyjr_dkkd">
+  <div class="hyjr_kz">
+    <div class="hyjr_zt1"> {dede:global.cfg_welcome/} </div>
+    <div class="hyjr_zt"> 　※ <a href="/" target="_blank">返回首页</a>　<!-- ※ <a href="/sitemap.xml" target="_blank">网站地图</a> -->　※ {dede:type typeid='13'}<a href="[field:typelink /]" >[field:typename /]</a>{/dede:type} </div>
+  </div>
+</div>
+<div class="clear"></div>
+
+<!--导航--> 
+
+<div class="top">
+  <div class="top_in">
+    <div class="totalwidth">
+      <div class="fl logo" data-scroll-reveal="enter left and move 10px over 0.5s"><a href="/"><img src="/style/images/logo.png" alt="{dede:global.cfg_webname/}" /></a></div>
+      <div class="nav menu fr">
+        <ul class="NavCeshi">
+          <li {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='navcurrent'":@me="";{/dede:field}><a href="/">网站首页</a></li>
+          {dede:channel type='top' row='6' currentstyle="<li class='navcurrent'><a  href='~typelink~' >~typename~</a> </li>" }
+           <li><a href="[field:typelink/]">[field:typename/]</a></li>
+          {/dede:channel}
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>

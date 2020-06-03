@@ -1,0 +1,2 @@
+INSERT INTO `dede_admin` VALUES('1','10','admin','00ad70bc76cbf5bc1536','admin','','','','1588670865','117.158.195.123');
+INSERT INTO `dede_admin` VALUES('2','10','cnvcn','a0f8a10470ba381aba44','技术','','','','1588725856','115.60.94.17');

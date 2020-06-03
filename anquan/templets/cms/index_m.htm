@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no" />
+<title>{dede:global.cfg_webname/}移动版</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_cmspath/}/m/style/css/style.css" rel="stylesheet">
+<link href="{dede:global.cfg_cmspath/}/m/style/css/common.css" rel="stylesheet">
+<script src="{dede:global.cfg_cmspath/}/m/style/js/autofontsize.min.js"></script>
+<script src="{dede:global.cfg_cmspath/}/m/style/js/jquery.js"></script>
+<script src="{dede:global.cfg_cmspath/}/m/style/js/clipboard.min.js"></script>
+<script src="{dede:global.cfg_cmspath/}/m/style/js/common.js"></script>
+</head>
+<body>
+{dede:include filename="header_m.htm"/} 
+<!--幻灯片大图开始-->
+<div id="banner_main">
+  <div id="banner" class="banner">
+    <ul class="list clearfix">
+      <li><a href="/"><img src="/m/style/images/1-1Z10Z91544O0.jpg" alt="手机端幻灯一"></a></li><li><a href="/"><img src="/m/style/images/1-1Z10Z91621160.jpg" alt="手机端幻灯二"></a></li>
+    </ul>
+    <div class="tip"></div>
+  </div>
+</div>
+<!--幻灯片大图结束--> 
+
+<!--首页导航开始-->
+<nav class="inav_t">
+  <dl>
+    {dede:channel type='top' row='6' currentstyle="<li><a href='list.php?tid=~id~'>~typename~</a></li>"}
+    <dd><a href="list.php?tid=[field:id/]">[field:typename/]</a></dd>
+    {/dede:channel}
+  </dl>
+</nav>
+<!--首页导航结束-->
+
+<section class="wrapper index"> 
+  <!--产品中心开始--> 
+  {dede:channelartlist typeid='2,2'}
+  <section id="floor_2_main">
+    <div class="floor_2">
+      <div class="in_title">
+        <p class="entit">PRODUCT</p>
+        <h3 class="tit"><em class="line fl"></em><span class="word">{dede:field name='typename'/}</span><em class="line fr"></em></h3>
+      </div>
+      <!--产品分类开始-->
+      <div class="tab"> {dede:channel type='son' row='6' currentstyle=" <a href='list.php?tid=~id~'>~typename~</a> "} <a href="list.php?tid=[field:id/]" title="[field:typename/]">[field:typename/]</a> {/dede:channel} </div>
+      <!--产品分类结束-->
+      <div class="proCenter">
+        <ul class="list clearfix">
+          {dede:arclist row='6' titlelen='50' orderby='pubdate'}
+          <li><a href="view.php?aid=[field:id/]" title="[field:title/]">
+            <div class="img"><img class="img" src="[field:picname/]" alt="[field:title/]"/></div>
+            <div class="txt">
+              <h3 class="tit" >[field:title/]</h3>
+            </div>
+            <p class="detail">详情>></p>
+            </a></li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <a class="look_more" href="list.php?tid={dede:field name='id'/}" title="查看更多>">查看更多>></a></div>
+  </section>
+  {/dede:channelartlist} 
+  
+  <!--产品中心结束--> 
+  
+  <!--小banner开始-->
+  <section class="index_slip index_slip1">
+    <h3 class="tit">某某机电、销售、租赁及综合运营商</h3>
+    <a class="slip_btn" href="tel:{dede:global.cfg_tel/}">拨打电话</a></section>
+  <!--小banner结束--> 
+  
+  <!--产品优势开始-->
+  <section id="floor_3_main">
+    <div class="floor_3">
+      <div class="in_title">
+        <p class="entit">ADVANTAGE</p>
+        <h3 class="tit"><em class="line fl"></em><span class="word">产品优势</span><em class="line fr"></em></h3>
+      </div>
+      <div class="proAdvant">
+        <ul class="list clearfix">
+          <li class="clearfix"><a>
+            <div class="img"><img src="/m/style/images/ys1.png"  alt="[field:typename/]"/></div>
+            <div class="txt">
+              <h3 class="tit">研发优势</h3>
+              <p class="cont">拥有研发技术人员30 余人，公司每年研发经费投入占比达4%，研发技术位列国内前茅</p>
+            </div>
+            </a></li>
+          <li class="clearfix"><a>
+            <div class="img"><img src="/m/style/images/ys2.png"  alt="[field:typename/]"/></div>
+            <div class="txt">
+              <h3 class="tit">制造优势</h3>
+              <p class="cont">拥有高柔性的制造加工能力， 拥有50 余台机械加工设备，具备下料、成型、 机加、焊接、涂装、安装调试等能力。</p>
+            </div>
+            </a></li>
+          <li class="clearfix"><a>
+            <div class="img"><img src="/m/style/images/ys3.png"  alt="[field:typename/]"/></div>
+            <div class="txt">
+              <h3 class="tit">服务优势</h3>
+              <p class="cont">公司提供覆盖咨询、设备选型、图纸设计、 设备制造与安装、设备维护全过程专业服务， 360 度贴心到家。</p>
+            </div>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--产品优势结束--> 
+  
+  <!--工程案例开始--> 
+  {dede:channelartlist typeid='9,9'}
+  <section id="floor_4_main">
+    <div class="floor_4">
+      <div class="in_title">
+        <p class="entit">CASE</p>
+        <h3 class="tit"><em class="line fl"></em><span class="word">{dede:field name='typename'/}</span><em class="line fr"></em></h3>
+      </div>
+      <!--案例分类开始-->
+      <div class="tab"> {dede:channel type='son' row='6' currentstyle=" <a href='list.php?tid=~id~'>~typename~</a> "} <a href="list.php?tid=[field:id/]" title="[field:typename/]">[field:typename/]</a> {/dede:channel} </div>
+      <!--案例分类结束-->
+      <div class="caseList" id="caseShow">
+        <div class="bd">
+          <ul class="list clearfix">
+            {dede:arclist row='5' titlelen='50' orderby='pubdate'}
+            <li><a href="view.php?aid=[field:id/]" title="[field:title/]">
+              <div class="img"><img class="img" src="[field:picname/]" alt="[field:title/]"/></div>
+              <div class="txt">
+                <h3 class="tit" >[field:title/]</h3>
+                <p class="cont">[field:description function="cn_substr(@me,160)"/]...</p>
+              </div>
+              </a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+        <div class="hd">
+          <ul class="iconList">
+          </ul>
+        </div>
+      </div>
+      <a class="look_more" href="list.php?tid={dede:field name='id'/}" title="查看更多>">查看更多>></a></div>
+  </section>
+  {/dede:channelartlist} 
+  <!--工程案例结束--> 
+  
+  <!--小banner开始-->
+  <section class="index_slip">
+    <h3 class="tit">精益制造、精品工程、精心服务为质量方针！</h3>
+    <a class="slip_btn" href="tel:{dede:global.cfg_tel/}">拨打电话</a></section>
+  <!--小banner结束--> 
+  
+  <!--关于我们开始--> 
+  {dede:channelartlist typeid='1,1'}
+  <section id="floor_1_main">
+    <div class="floor_1">
+      <div class="about clearfix"><a class="item fl" href="list.php?tid={dede:field name='id'/}"> <img src="{dede:global.cfg_cmspath/}/m/style/images/about.jpg" alt="{dede:field name='typename'/}"/></a>
+        <div class="contW fl">
+          <div class="in_title">
+            <p class="entit">{dede:field name='typenameen'/}</p>
+            <h3 class="tit"><em class="line fl"></em><span class="word">{dede:field name='typename'/}</span><em class="line fr"></em></h3>
+          </div>
+          <a href="list.php?tid={dede:field name='id'/}">
+          <p class="cont">{dede:sql sql='Select content from dede_arctype where id=1'} 
+            [field:content  function='cn_substr(html2text(@me),400)'/]...
+            {/dede:sql}</p>
+          </a><a class="view_detail" href="list.php?tid={dede:field name='id'/}" title="了解详情>>">了解详情>></a> </div>
+      </div>
+    </div>
+  </section>
+  {/dede:channelartlist} 
+  
+  <!--关于我们结束--> 
+  
+  <!--新闻动态开始--> 
+  {dede:channelartlist typeid='11,11'}
+  <section id="floor_5_main">
+    <div class="floor_5">
+      <div class="in_title">
+        <p class="entit">NEWS</p>
+        <h3 class="tit"><em class="line fl"></em><span class="word">{dede:field name='typename'/}</span><em class="line fr"></em></h3>
+      </div>
+      <!--新闻分类开始-->
+      <div class="tab"> {dede:channel type='son' row='6' currentstyle=" <a href='list.php?tid=~id~'>~typename~</a> "} <a href="list.php?tid=[field:id/]" title="[field:typename/]">[field:typename/]</a> {/dede:channel} </div>
+      <!--新闻分类结束-->
+      <div class="inews">
+        <ul class="list">
+          {dede:arclist row='5' titlelen='50' orderby='pubdate'}
+          <li><a href="view.php?aid=[field:id/]" title="[field:title/]">
+            <h3 class="tit" >[field:title/]</h3>
+            <p class="time">[field:pubdate function="MyDate('Y-m-d',@me)"/]</p>
+            </a></li>
+          {/dede:arclist}
+        </ul>
+        <a class="look_more" href="list.php?tid={dede:field name='id'/}" title="查看更多>">查看更多>></a></div>
+    </div>
+  </section>
+  {/dede:channelartlist} 
+  <!--新闻动态结束--> 
+</section>
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/m/style/js/touchslide.1.1.js" ></script> 
+<script type="text/javascript">TouchSlide({ slideCell:"#caseShow",titCell:".hd ul",mainCell:".bd ul", effect:"leftLoop", interTime:"5000", autoPage:true,autoPlay:true});</script> 
+{dede:include filename="footer_m.htm"/}
+</body>
+</html>

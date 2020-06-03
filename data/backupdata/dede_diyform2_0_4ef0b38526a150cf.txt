@@ -1,0 +1,2 @@
+INSERT INTO `dede_diyform2` VALUES('1','0','王明','15256568989','565656@qq.com','胜多负少');
+INSERT INTO `dede_diyform2` VALUES('2','0','王明','15256568989','565656@qq.com','啥地方');

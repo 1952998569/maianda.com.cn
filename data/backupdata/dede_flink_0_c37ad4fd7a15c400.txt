@@ -1,0 +1,6 @@
+INSERT INTO `dede_flink` VALUES('2','1','http://www.baidu.cn','百度搜索','','','','1226375403','1','2');
+INSERT INTO `dede_flink` VALUES('3','1','http://fms.news.cn/swf/2020_sjxw/2_1_xgyq/index.html?v=0.542','新冠肺炎实时动态','','','','1570720960','1','2');
+INSERT INTO `dede_flink` VALUES('4','1','http://www.maianda.com.cn','郑州消毒设备厂家','','','','1570720968','1','2');
+INSERT INTO `dede_flink` VALUES('5','1','http://www.maianda.com.cn','河南消毒设备','','','','1570720975','1','2');
+INSERT INTO `dede_flink` VALUES('6','1','http://heilongjiang.maianda.com.cn/','黑龙江车辆消毒通道','','','','1580187389','1','2');
+INSERT INTO `dede_flink` VALUES('7','1','http://fms.news.cn/swf/2020_sjxw/2_1_xgyq/index.html?v=0.542','新冠肺炎实时动态','','','','1588650236','1','1');

@@ -1,0 +1,38 @@
+﻿
+/* 秀站网 精品与原创织梦模板提供商，一站式建站 */
+/* 主营业务：快速建站、快排、高权重域名、海外服务器 */
+/* 模板建站：Www.Xiuzhanwang.Com */
+/* 主机/服务器：Www.xiuzhanyun.Com */
+/* 域名抢注：Www.xiuzhanmi.Com */
+/* QQ：2361928288  835971066 */
+
+.pro_list_box_item_zdy{display:block;height:155px; padding:8px; border-bottom: 1px solid #ccc;overflow:hidden;}
+.pro_list_box_item_zdy:hover{background:#f8f8f8;}
+.pro_list_box_item_l_zdy{width:205px; height:135px; float:left;}
+.pro_list_box_item_l_zdy a img {width:205px; height:135px; border:1px solid #CCC; padding:8px;}
+.pro_list_box_item_r_zdy{width:940px; float:right; text-align:left}
+.pro_list_box_item_r_zdy p{height: 26px; font-size: 16px; color: #000; border: none;line-height: 26px;padding-bottom: 5px;}
+.pro_list_box_item_r_zdy p a{height: 26px; font-size: 16px; color: #0067d0; border: none;}
+.pro_list_box_item_r_zdy div{ font-size:15px; font-weight:normal; color:#888; height:70px; overflow:hidden; line-height:28px; }
+.pro_list_box_item_r_zdy div > span{font-size:13px !important; font-weight:normal; color:#888;  overflow:hidden; line-height:24px !important;}
+.pro_list_box_item_r_zdy div p{ font-size:13px; font-weight:normal;}
+.pro_list_box_item_r_zdy a{text-decoration:none}
+.pro_list_box_item_r_zdy a:hover{text-decoration:none}
+.pro_list_box_item_zdy:hover .pro_list_box_item_r_zdy a{background:#d7030c;}
+.pro_list_box_item_zdy:hover .pro_list_box_item_r_zdy p{color:#000;}
+.shopmrsc a:hover{color:#000 !important;}
+.content_more_a_zdy{ width:90px; height:30px; background: #0067d0; float:right; display:block; margin-top:10px;  text-align: center; line-height: 29px; height: 30px; color: #fff !important;font-size: 13px !important; letter-spacing: 0.5px;}
+.dgcontent_title_h5 { display: block;text-align: center;border-bottom:1px solid #ddd;height:55px !important;line-height:55px !important;margin: 10px auto 25px !important;}
+.dgcontent_title_h5 h5,.dgcontent_title_h5 h5 strong{ font-size:18px}
+.news_content_title { display: block;text-align: center;border-bottom:1px solid #ddd;height:55px !important;line-height:55px !important;margin: 10px auto;}
+.news_content_title h3,.news_content_title h3 strong{ font-size:18px; color: #0067d0;}
+.news_content_title hr{display:none;}
+.content_more_a_zdy::after,.content_more_a_zdy:after{content: '查看全文';color: #fff;}
+
+
+
+.pro_all_class{width:1150px !important; height:auto !important;margin:0 auto !important; padding-top:8px; overflow:hidden; font-size:0px; line-height:0px; border-bottom:none !important;margin-bottom:20px !important;}
+.pro_all_class a{float:left; display:block; width:155px;height:50px; overflow:hidden; text-align:center; margin-right:8px !important; font-size:14px; color:279c2c; background:#0067d0; white-space: nowrap; text-overflow: ellipsis; line-height:50px; text-decoration:blink; transition: all 0.8s linear; color:#fff;}
+
+.pro_all_class a:hover{transition: all 0.8s linear; background:#d7030c; color:#fff;}
+.pro_all_class strong{background:#d7030c; color:#fff; display:block ;}

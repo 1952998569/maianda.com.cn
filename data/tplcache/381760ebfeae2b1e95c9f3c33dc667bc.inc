@@ -1,0 +1,2 @@
+<div style="width:280px; float:left; text-align:center; padding:8px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;"> <a href="[field:arcurl/]" title="[field:title /]"> <img src="[field:litpic/]" alt="[field:title /]" width="280" height="210" border="0" style="border: 1px solid #C0C0C0" ></a><br>
+          <a href="[field:arcurl/]" title="[field:title /]">[field:title /] </a></div>

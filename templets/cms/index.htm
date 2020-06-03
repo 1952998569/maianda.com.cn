@@ -1,0 +1,426 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}">
+<meta name="description" content="{dede:global.cfg_description/}">
+<link href="/style/css/indexcss.css" rel="stylesheet" type="text/css" />
+<link href="/style/css/allbag.css" rel="stylesheet" >
+<link href="/style/css/animate.css" rel="stylesheet">
+<script type="text/javascript" src="/style/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/style/js/indexjs.js"></script>
+<script type="text/javascript" src="/style/js/zyqxt_index.js"></script>
+<link rel="canonical" href="{dede:global.cfg_mobileurl/}/index.php"/>
+<link rel="alternate" media="only screen and(max-width: 640px)" href="{dede:global.cfg_mobileurl/}/index.php" >
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".banner-box").slide({
+			titCell:".hd ul",
+			mainCell:".bd ul",
+			effect:"fold",
+			interTime:3500,
+			delayTime:500,
+			autoPlay:true,
+			autoPage:true, 
+			trigger:"mouseover" 
+		});
+	});
+</script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="banner">
+  <div class="banner-box">
+    <div class="bd">
+      <ul>
+        <li style="background-image:url(/style/images/20190219104536_1773913252.jpg);"></li>
+        <li style="background-image:url(/style/images/20190219104713_411723512.jpg);"></li>
+        <li style="background-image:url(/style/images/20190219104849_66859308.jpg);"></li>
+      </ul>
+    </div>
+    <div class="banner-btn"> <a class="prev" href="javascript:void(0);"></a> <a class="next" href="javascript:void(0);"></a>
+      <div class="hd">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<!--搜索/-->
+<div id="search_bg">
+  <div id="search_c">
+    <div id="search_c_l">
+      <div class="head_adv fl"> <span>消毒设备一站式制造供应商</span> <br>
+        设计定制、生产加工、整机装配、设备接线</div>
+      <div class="fr h_tel">
+        <div class="hgtbhmk">
+          <div class="dianhtb"><img src="/style/images/20190222152442_648610500.png" alt="客户咨询服务热线" /></div>
+          <div class="kehftrx">客户咨询服务热线：</div>
+          <div class="clear"></div>
+        </div>
+        <div class="dianhsj">{dede:global.cfg_phone/}</div>
+      </div>
+    </div>
+    <div id="search_c_r">
+      <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php" style="margin:0; padding:0; overflow:hidden;">
+        <div id="search_cc">
+          <div id="search_cc_l">
+            <input type="hidden" name="kwtype" value="0" />
+            <input name="q" type="text" class="input" size="13" value="请您输入要查询的关键词进行搜索" onFocus="if(this.value=='请您输入要查询的关键词进行搜索'){this.value='';this.style.color='#cccccc'}" onBlur="if(this.value==''){this.value='请您输入要查询的关键词进行搜索';this.style.color='#cccccc'}" style="margin:0; padding:0;border:1px #d1d1d1 solid; background:none; height:42px; padding-left:10px; line-height:42px; width:390px;"/>
+          </div>
+          <div id="search_cc_r">
+            <input type="submit" value="" style="border:none; width:69px; height:44px; background:url(/style/images/20190222152511_765998281.png)">
+          </div>
+          <div class="clear"></div>
+        </div>
+      </form>
+      <div id="search_b"><strong style="color:#dc061a;">热门搜索：</strong>{dede:hotwords  num=6  subday=365 maxlength=16/}</div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<!--产品-->
+<div class="ghdgcpb wow animated bounceInDown animated">尧安-<span>产品展示</span></div>
+<div class="yzswnz">一站式专业服务，让您省时，省力，又省心</div>
+<div class="xigtnjd"><img src="/style/images/20190122103929_1634337011.png" alt="郑州消毒设备" /></div>
+<div class="totalwidth">
+  <div id="tabs">
+    {dede:channelartlist typeid='2' row='10'}
+    <li><a href="{dede:field name='typeurl'/}">{dede:field name='typename'/}</a></li>
+    {/dede:channelartlist}
+    <div class="clear"></div>
+  </div>
+  <div id="contents">
+    <ul style="display:block;">
+      <div class="prod_row2">
+        <div class='divproduct_new_div'>
+           {dede:arclist titlelen='45' row='8' typeid='3'}
+          <div class="divproduct_new_div_item">
+            <div class="divproduct_new_div_item_date"></div>
+            <div class="divproduct_new_div_item_content">
+              <div class="divproduct_new_div_item_title"><a class="divproduct_new_div_item_a" href="[field:arcurl/]" title="[field:title /]" style="font-size:15px">[field:title /]</a></div>
+            </div>
+            <div class="product_div_item_pic"> <a href="[field:arcurl/]" title="[field:title /]"> <img src="[field:litpic/]" alt="[field:title /]" class="product_div_item_image"> </a> </div>
+          </div>
+          {/dede:arclist}
+        </div>
+      </div>
+    </ul>
+    <ul>
+      <div class="prod_row2">
+        <div class='divproduct_new_div'>
+           {dede:arclist titlelen='45' row='8' typeid='4'}
+          <div class="divproduct_new_div_item">
+            <div class="divproduct_new_div_item_date"></div>
+            <div class="divproduct_new_div_item_content">
+              <div class="divproduct_new_div_item_title"><a class="divproduct_new_div_item_a" href="[field:arcurl/]" title="[field:title /]" style="font-size:15px">[field:title /]</a></div>
+            </div>
+            <div class="product_div_item_pic"> <a href="[field:arcurl/]" title="[field:title /]"> <img src="[field:litpic/]" alt="[field:title /]" class="product_div_item_image"> </a> </div>
+          </div>
+          {/dede:arclist}
+        </div>
+      </div>
+    </ul>
+    <ul>
+      <div class="prod_row2">
+        <div class='divproduct_new_div'>
+           {dede:arclist titlelen='45' row='8' typeid='5'}
+          <div class="divproduct_new_div_item">
+            <div class="divproduct_new_div_item_date"></div>
+            <div class="divproduct_new_div_item_content">
+              <div class="divproduct_new_div_item_title"><a class="divproduct_new_div_item_a" href="[field:arcurl/]" title="[field:title /]" style="font-size:15px">[field:title /]</a></div>
+            </div>
+            <div class="product_div_item_pic"> <a href="[field:arcurl/]" title="[field:title /]"> <img src="[field:litpic/]" alt="[field:title /]" class="product_div_item_image"> </a> </div>
+          </div>
+          {/dede:arclist}
+        </div>
+      </div>
+    </ul>
+    <ul>
+      <div class="prod_row2">
+        <div class='divproduct_new_div'>
+           {dede:arclist titlelen='45' row='8' typeid='6'}
+          <div class="divproduct_new_div_item">
+            <div class="divproduct_new_div_item_date"></div>
+            <div class="divproduct_new_div_item_content">
+              <div class="divproduct_new_div_item_title"><a class="divproduct_new_div_item_a" href="[field:arcurl/]" title="[field:title /]" style="font-size:15px">[field:title /]</a></div>
+            </div>
+            <div class="product_div_item_pic"> <a href="[field:arcurl/]" title="[field:title /]"> <img src="[field:litpic/]" alt="[field:title /]" class="product_div_item_image"> </a> </div>
+          </div>
+          {/dede:arclist}
+        </div>
+      </div>
+    </ul>
+    <ul>
+      <div class="prod_row2">
+        <div class='divproduct_new_div'>
+           {dede:arclist titlelen='45' row='8' typeid='7'}
+          <div class="divproduct_new_div_item">
+            <div class="divproduct_new_div_item_date"></div>
+            <div class="divproduct_new_div_item_content">
+              <div class="divproduct_new_div_item_title"><a class="divproduct_new_div_item_a" href="[field:arcurl/]" title="[field:title /]" style="font-size:15px">[field:title /]</a></div>
+            </div>
+            <div class="product_div_item_pic"> <a href="[field:arcurl/]" title="[field:title /]"> <img src="[field:litpic/]" alt="[field:title /]" class="product_div_item_image"> </a> </div>
+          </div>
+          {/dede:arclist}
+        </div>
+      </div>
+    </ul>
+    <ul>
+      <div class="prod_row2">
+        <div class='divproduct_new_div'>
+           {dede:arclist titlelen='45' row='8' typeid='8'}
+          <div class="divproduct_new_div_item">
+            <div class="divproduct_new_div_item_date"></div>
+            <div class="divproduct_new_div_item_content">
+              <div class="divproduct_new_div_item_title"><a class="divproduct_new_div_item_a" href="[field:arcurl/]" title="[field:title /]" style="font-size:15px">[field:title /]</a></div>
+            </div>
+            <div class="product_div_item_pic"> <a href="[field:arcurl/]" title="[field:title /]"> <img src="[field:litpic/]" alt="[field:title /]" class="product_div_item_image"> </a> </div>
+          </div>
+          {/dede:arclist}
+        </div>
+      </div>
+    </ul>
+  </div>
+  <script>
+	$(function(){
+		window.onload = function()
+		{
+			var $li = $('#tabs li');
+			var $ul = $('#contents ul');
+						
+			$li.mouseover(function(){
+				var $this = $(this);
+				var $t = $this.index();
+				$li.removeClass();
+				$this.addClass('currents');
+				$ul.css('display','none');
+				$ul.eq($t).css('display','block');
+			})
+		}
+	});
+</script> 
+</div>
+
+<!--优势/-->
+<div class="top50"></div>
+<div id="youshi_bg">
+  <div class="totalwidth">
+    <div id="youshi_t">
+      <div class="youshi_t1">尧安 ● 四大优势</div>
+      <div class="youshi_t2">消毒设备齐全，让养殖更安全，一站式服务，帮您省钱省心</div>
+    </div>
+    <div class="xigtnjd"><img src="/style/images/20190222171439_780476783.png" alt="消毒设备" /></div>
+    <div class="top20"></div>
+    <div id="youshi_fl">
+      <div class="youshi_c">
+        <div class="youshi_h1">消毒设备专业提供商</div>
+        <div class="youshi_h2">Disinfection equipment</div>
+        <div class="youshi_h3">专业消毒设备，养殖安全更省心</div>
+        <div class="youshi_h4">
+          <div class="v1"><img src="/style/images/20190222172057_17994421.png" alt="生产厂家" /></div>
+          生产厂家</div>
+        <div class="youshi_h4">
+          <div class="v1"><img src="/style/images/20190222172151_1481866272.png" alt="价格优惠" /></div>
+          价格优惠</div>
+        <div class="youshi_h4">
+          <div class="v1"><img src="/style/images/20190222172213_829008872.png" alt="售后保障" /></div>
+          售后保障</div>
+        <div class="clear"></div>
+        <div class="youshi_ted"><span>服务热线：</span><strong>{dede:global.cfg_tel/}</strong></div>
+      </div>
+    </div>
+    <div id="youshi_r">
+      <div class="youshi_p">
+        <div class="youshi_v1">01</div>
+        <div class="youshi_v2">十五年消毒设备生产制造经验</div>
+        <div class="youshi_v3"></div>
+        <div class="youshi_v4">尧安环保科技有限公司国内较早专业从事养殖消毒降温设备研发、生产和循环养殖模式技术服务的科技型企业。，以全新的产品服务市场，备受好评。</div>
+      </div>
+      <div class="youshi_p">
+        <div class="youshi_v1">02</div>
+        <div class="youshi_v2">产品质量好，消毒效果好</div>
+        <div class="youshi_v3"></div>
+        <div class="youshi_v4">我们拥有先进的高精密加工设备，完善的管理体系标准，精益生产管理流程，联机一体化制作，计算机模拟生产过程，有报错装置，保证产品精度。</div>
+      </div>
+      <div class="clear"></div>
+      <div class="youshi_p">
+        <div class="youshi_v1">03</div>
+        <div class="youshi_v2">专业技术团队，高性价比</div>
+        <div class="youshi_v3"></div>
+        <div class="youshi_v4">拥有丰富的消毒设备研发生产经验，优质的产品和优惠的价格，引进先进生产设备，实现低成本、高品质，以品质求生存，引进先进的检测设备，确保产品检测无误。</div>
+      </div>
+      <div class="youshi_p">
+        <div class="youshi_v1">04</div>
+        <div class="youshi_v2">为您提供完善的售后服务体系</div>
+        <div class="youshi_v3"></div>
+        <div class="youshi_v4">我们拥有一批专业的销售和服务团队为您提供诸多贴心服务，专业的售后服务团队，定期客户回访，及时为您解决问题。</div>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<!--简介-->
+<div class="top50"></div>
+<div class="aygnwydj">
+  <div class="gyxtjhw">关于-<font>尧安环保农业科技</font></div>
+</div>
+<div class="top40"></div>
+<div class="totalwidth">
+  <div class="shgbbtl"></div>
+  <div class="hsgbjtzb">
+    <div class="ngjlswbz">尧安环保—您身边值得信赖的消毒设备提供商</div>
+    <div class="gjgnjsld">{dede:sql sql='Select content from dede_arctype where id=1'}[field:content function="cn_substr(Html2text(@me),400)"/]{/dede:sql}.....</div>
+    <div class="srhlsnkd">{dede:type typeid='1'}<a href="[field:typelink /]" >+[field:typename /]</a>{/dede:type}</div>
+    <div class="srhlsnkd">{dede:type typeid='10'}<a href="[field:typelink /]" >+[field:typename /]</a>{/dede:type}</div>
+    <div class="srhlsnkd">{dede:type typeid='9'}<a href="[field:typelink /]" >+[field:typename /]</a>{/dede:type}</div>
+    <div class="srhlsnkd">{dede:type typeid='12'}<a href="[field:typelink /]" >+[field:typename /]</a>{/dede:type}</div>
+    <div class="clear"></div>
+  </div>
+  <div class="jjbtyz"><img src="/style/images/20190226100906_1473984248.jpg" alt="消毒设备 " /></div>
+  <div class="clear"></div>
+</div>
+
+<!--新闻 news-->
+<div class="news">
+  <div class="news_tline">
+    <div class="news_tline_i">
+      <div class="news_tline_il"> </div>
+    </div>
+  </div>
+  <div class="news_m"> 尧安新闻动态 </div>
+  <div class="news_s"> 关注尧安环保科技最新动态，拥有技术团队和专业的售后服务团队 </div>
+  <div class="news_line">
+    <div class="news_line_t"> </div>
+    <div class="news_line_d"> </div>
+  </div>
+  <div class="lanrenzhijia">
+    <div class="news_dt">
+      {dede:type typeid='14'}<a href="[field:typelink /]" class="on"><div class="news_dt_rm"> [field:typename /] </div><div class="news_dt_ren"> News </div></a>{/dede:type}
+      {dede:type typeid='15'}<a href="[field:typelink /]"><div class="news_dt_rm"> [field:typename /] </div><div class="news_dt_ren"> Information </div></a>{/dede:type}
+      {dede:type typeid='16'}<a href="[field:typelink /]"><div class="news_dt_rm"> [field:typename /] </div><div class="news_dt_ren"> Help </div></a>{/dede:type}
+    </div>
+    <div class="content">
+      <ul class="ul">
+        <li class="li">
+          <div class="news_div">
+            {dede:arclist titlelen='45' row='4' typeid='14'}
+            <div class="news_div_item">
+              <div class="news_div_item_date">
+                <div class="news_div_item_year">[field:pubdate function="MyDate('Y',@me)"/]-</div>
+                <div class="news_div_item_month">[field:pubdate function="MyDate('m',@me)"/]-</div>
+                <div class="news_div_item_day">[field:pubdate function="MyDate('d',@me)"/]</div>
+              </div>
+              <div class="news_div_item_content">
+                <div class="news_div_item_title"><a class="news_div_item_a" href="[field:arcurl/]" title="[field:title /]">[field:title /]</a></div>
+                <div class="news_div_item_body">[field:description function="cn_substr(@me,120)"/]...</div>
+              </div>
+              <div class="news_div_item_pic"> <a href="[field:arcurl/]" title="[field:title /]"> <img src="[field:litpic/]" alt="[field:title /]" class="news_div_item_image"> </a> </div>
+            </div>
+            {/dede:arclist}
+          </div>
+        </li>
+        <li class="li">
+          <div class="news_div">
+            {dede:arclist titlelen='45' row='4' typeid='15'}
+            <div class="news_div_item">
+              <div class="news_div_item_date">
+                <div class="news_div_item_year">[field:pubdate function="MyDate('Y',@me)"/]-</div>
+                <div class="news_div_item_month">[field:pubdate function="MyDate('m',@me)"/]-</div>
+                <div class="news_div_item_day">[field:pubdate function="MyDate('d',@me)"/]</div>
+              </div>
+              <div class="news_div_item_content">
+                <div class="news_div_item_title"><a class="news_div_item_a" href="[field:arcurl/]" title="[field:title /]">[field:title /]</a></div>
+                <div class="news_div_item_body">[field:description function="cn_substr(@me,120)"/]...</div>
+              </div>
+              <div class="news_div_item_pic"> <a href="[field:arcurl/]" title="[field:title /]"> <img src="[field:litpic/]" alt="[field:title /]" class="news_div_item_image"> </a> </div>
+            </div>
+            {/dede:arclist}
+          </div>
+        </li>
+        <li class="li">
+          <div class="news_div">
+            {dede:arclist titlelen='45' row='4' typeid='16'}
+            <div class="news_div_item">
+              <div class="news_div_item_date">
+                <div class="news_div_item_year">[field:pubdate function="MyDate('Y',@me)"/]-</div>
+                <div class="news_div_item_month">[field:pubdate function="MyDate('m',@me)"/]-</div>
+                <div class="news_div_item_day">[field:pubdate function="MyDate('d',@me)"/]</div>
+              </div>
+              <div class="news_div_item_content">
+                <div class="news_div_item_title"><a class="news_div_item_a" href="[field:arcurl/]" title="[field:title /]">[field:title /]</a></div>
+                <div class="news_div_item_body">[field:description function="cn_substr(@me,120)"/]...</div>
+              </div>
+              <div class="news_div_item_pic"> <a href="[field:arcurl/]" title="[field:title /]"> <img src="[field:litpic/]" alt="[field:title /]" class="news_div_item_image"> </a> </div>
+            </div>
+            {/dede:arclist}
+          </div>
+        </li>
+      </ul>
+    </div>
+    <script>
+  $(function(){
+      $('.lanrenzhijia .content .ul').width(1200*$('.lanrenzhijia .content li').length+'px');
+      $(".lanrenzhijia .news_dt a").mouseover(function(){
+          $(this).addClass('on').siblings().removeClass('on');
+          var index = $(this).index();
+          number = index;
+          var distance = -1200*index;
+          $('.lanrenzhijia .content .ul').stop().animate({
+              left:distance
+          });
+      });
+      var auto = 0;  //等于1则自动切换，其他任意数字则不自动切换
+      if(auto ==1){
+          var number = 0;
+          var maxNumber = $('.lanrenzhijia .news_dt a').length;
+          function autotab(){
+              number++;
+              number == maxNumber? number = 0 : number;
+              $('.lanrenzhijia .news_dt a:eq('+number+')').addClass('on').siblings().removeClass('on');
+              var distance = -1200*number;
+              $('.lanrenzhijia .content .ul').stop().animate({
+                  left:distance
+              });
+          }
+          var tabChange = setInterval(autotab,3000);
+          //鼠标悬停暂停切换
+          $('.lanrenzhijia').mouseover(function(){
+              clearInterval(tabChange);
+          });
+          $('.lanrenzhijia').mouseout(function(){
+              tabChange = setInterval(autotab,3000);
+          });
+        }  
+  });
+  </script> 
+  </div>
+  <div class="clear"></div>
+</div>
+
+<!--友情-->
+<div class="top60"></div>
+<div class="link_bg">
+  <div class="totalwidth link">
+    <h2 class="fl"><a title="友情链接" target="_blank"><i>LINK</i>友情链接</a></h2>
+    <p class="fl">
+    <div class='linkTagcs'>
+      <ul>
+        {dede:flink row='24' type='text' titlelen='26' linktype = '2'}<li>[field:link /]</li>{/dede:flink}
+      </ul>
+    </div>
+    </p>
+  </div>
+</div>
+
+{dede:include filename="foot.htm"/}
+
+</body>
+</html>

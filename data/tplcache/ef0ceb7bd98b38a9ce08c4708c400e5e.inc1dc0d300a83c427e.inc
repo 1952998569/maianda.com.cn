@@ -1,0 +1,7 @@
+<?php
+$z[0]=Array("typelink","",9,27);
+$z[0][4]=array();
+$z[1]=Array("typename","",30,48);
+$z[1][4]=array();
+
+?>

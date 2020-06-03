@@ -1,0 +1,1 @@
+<a href="[field:typelink /]" class="on"><div class="news_dt_rm"> [field:typename /] </div><div class="news_dt_ren"> News </div></a>

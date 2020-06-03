@@ -1,0 +1,46 @@
+<div id="returntop" class="icon hidden"></div>
+<!--页尾开始-->
+<footer id="footer_main"> 
+  <!--底部导航开始-->
+  <div class="bottomNav">
+    <ul class="list">
+      {dede:channel type='top' currentstyle="<li><a href='list.php?tid=~id~'><h3 class='tit'>~typename~</h3><em class='icon'></em></a></li>"}
+      <li><a href="list.php?tid=[field:id/]" title="[field:typename/]">
+        <h3 class="tit">[field:typename/]</h3>
+        <em class="icon"></em></a></li>
+      {/dede:channel}
+    </ul>
+  </div>
+  <!--底部导航结束--> 
+  
+  <!--版权开始-->
+  <div id="copyright">
+    <p>Copyright © 2002-2020 尧安环保科技有限公司 版权所有</p>  <script type="text/javascript" src="//js.users.51.la/20539033.js"></script> 
+    <p>备案号：<a href="http://www.miitbeian.gov.cn/"  target="_blank" title="{dede:global.cfg_beian/}">{dede:global.cfg_beian/}</a></p>
+  </div>
+  <!--版权结束--> 
+</footer>
+<!--页尾结束--> 
+
+<!--底部图标开始-->
+<section id="toolbar">
+  <ul class="list clearfix">
+    <li><a href="index.php" title="首页"><s class="icon"></s><span>首页</span></a></li>
+    <li><a href="tel:{dede:global.cfg_tel/}" title="电话"><s class="icon"></s><span>电话</span></a></li>
+    <li><a onclick="dkcf()" title="微信"><s class="icon"></s><span>微信</span></a></li>
+    {dede:type typeid='12'}
+    <li><a href="list.php?tid=[field:id/]" title="地图"><s class="icon"></s><span>地图</span></a></li>
+    {/dede:type}
+  </ul>
+</section>
+<!--底部图标结束-->
+
+<div id="wxnr">
+  <div class="nrdf"> <i onclick="gbcf()">X</i><img src="{dede:global.cfg_cmspath/}/m/style/images/erweima.png" alt="{dede:global.cfg_webname/}"/>
+    <p>截屏，微信识别二维码</p>
+    <p>微信号：<span id="btn" data-clipboard-text="{dede:global.cfg_weixin/}">{dede:global.cfg_weixin/}</span></p>
+    <p>（点击QQ号复制，添加好友）</p>
+  </div>
+</div>
+<div id="weixin">微信号已复制，请打开微信添加咨询详情！</div>
+<script type="text/javascript" src="{dede:global.cfg_cmspath/}/m/style/js/app.js" ></script>

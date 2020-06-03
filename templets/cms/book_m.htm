@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html xmlns:background="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="format-detection" content="telephone=no" />
+<title>{dede:field.seotitle/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<link href="{dede:global.cfg_cmspath/}/m/style/css/style.css" rel="stylesheet">
+<link href="{dede:global.cfg_cmspath/}/m/style/css/common.css" rel="stylesheet">
+<script src="{dede:global.cfg_cmspath/}/m/style/js/autofontsize.min.js"></script>
+<script src="{dede:global.cfg_cmspath/}/m/style/js/jquery.js"></script>
+<script src="{dede:global.cfg_cmspath/}/m/style/js/clipboard.min.js"></script>
+<script src="{dede:global.cfg_cmspath/}/m/style/js/common.js"></script>
+</head>
+<body>
+{dede:include filename="header_m.htm"/} 
+<!--位置开始--> 
+{dede:include filename="left_m.htm"/} 
+<!--位置结束--> 
+<!--单页内容开始-->
+<section class="contactPage">
+
+
+
+<!--  留言板测试-->
+  <ul class="login">
+  <form class="msgForm form_book" action="/plus/diy.php" enctype="multipart/form-data" method="post">
+    <input type="hidden" name="action" value="post" />
+    <input type="hidden" name="diyid" value="2" />
+    <input type="hidden" name="do" value="2" />
+
+    <div class="form-content" style="height: 45px">
+        <input type="text"  name="name" id="name" class="login_input"  maxlength="60" placeholder="姓名">
+    </div>
+
+      <div class="form-content" style="height: 45px" >
+        <input type="text" name="tel" id="tel" class="login_input" maxlength="20" placeholder="手机号码">
+      </div>
+
+      <div class="form-content" style="height: 45px" >
+        <input type="email" name="email" id="email" class="login_input" placeholder="电子邮件">
+      </div>
+
+      <div class="form-content" >
+        <textarea class="login_textarea" id="content" name="content" rows="5"  placeholder="留言内容"></textarea>
+      </div>
+
+    <input type="hidden" name="dede_fields" value="name,text;tel,text;email,text;content,multitext" />
+    <input type="hidden" name="dede_fieldshash" value="d6a2d6bfa9652856439388062d3292c9" />
+
+    <div align='center' style='height:50px;padding-top:10px;'>
+      <input  class='login_btn common_bg' type="submit" name="submit"  style="background-color:#1535B8; height: 50px; color:#FFFFEE"  value="提 交"  />
+    </div></form>
+  </ul>
+  <!--留言表单开始-->
+<!--  <ul class="login">-->
+<!--    <form class="msgForm form_book" action="/plus/diy.php" enctype="multipart/form-data" method="post">-->
+<!--      <input type="hidden" name="action" value="post" />-->
+<!--      <input type="hidden" name="diyid" value="1" />-->
+<!--      <input type="hidden" name="do" value="2" />-->
+<!--      <li>-->
+<!--        <input type="text" name="name" id="name" maxlength="20" placeholder="姓名" data-rule="姓名:required;" class="login_input " />-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <input type="text" name="tel" maxlength="20" placeholder="手机号码" data-rule="手机号码:required;mobile|tel" class="login_input" >-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <input type="email" name="email" id="email"  placeholder="电子邮件"   data-rule="邮箱em" class="login_input">-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <textarea name="content" cols="" rows="" data-rule="咨询内容:required;"  onKeyUp="strlen_verify(this,'booklen',255)" placeholder="咨询内容" class="login_textarea" ></textarea>-->
+<!--      </li>-->
+<!--      <input type="hidden" name="dede_fields" value="name,text;tel,text;content,text" />-->
+<!--      <input type="hidden" name="dede_fieldshash" value="b430c226756ec920d6ba032b04a5184a" />-->
+<!--      <li>-->
+<!--        <input class="login_btn common_bg" type="submit" value="提   交">-->
+<!--      </li>-->
+<!--    </form>-->
+<!--  </ul>-->
+  <!--留言表单结束--> 
+</section>
+<!--单页内容结束--> 
+{dede:include filename="footer_m.htm"/}
+</body>
+</html>
